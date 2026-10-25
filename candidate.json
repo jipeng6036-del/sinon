@@ -1,0 +1,9 @@
+{
+  "base": "84e91a491b5d88b81e6a80e5dd3f77520577f9e8",
+  "head": "ff9f101db520cbb07b85861aa6794ed48a7d661b",
+  "branch": "fix/windows-rollup-entry-paths",
+  "files": {
+    "rollup.config.mjs": "df12ec5aa7080aca5d1a40012116f005c642ea4b8fed538e3572a0de0d0386a4",
+    "test/scripts/rollup-config-test.js": "45a52bdc1d87c8ff01b5fec0a6f4684e0423ecf3e14edd8fbea2c1c2bb6f9252"
+  }
+}

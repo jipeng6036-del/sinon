@@ -1,0 +1,126 @@
+[
+  {
+    "name": "ram-browser-launch",
+    "command": [
+      "node",
+      "--input-type=module",
+      "-e",
+      "import puppeteer from \"puppeteer\"; const b=await puppeteer.launch({args:[\"--no-sandbox\"],headless:\"new\"}); console.log(await b.version()); await b.close();"
+    ],
+    "source": "candidate",
+    "code": 0,
+    "seconds": 0.27,
+    "utc": "2026-10-25T06:18:29.390827+00:00"
+  },
+  {
+    "name": "ram-baseline-build",
+    "command": [
+      "npm",
+      "run",
+      "build-artifacts"
+    ],
+    "source": "baseline",
+    "code": 0,
+    "seconds": 0.58,
+    "utc": "2026-10-25T06:18:29.978806+00:00"
+  },
+  {
+    "name": "ram-baseline-regression",
+    "command": [
+      "node",
+      "node_modules/mocha/bin/mocha.js",
+      "test/scripts/rollup-config-test.js"
+    ],
+    "source": "baseline",
+    "code": 0,
+    "seconds": 0.37,
+    "utc": "2026-10-25T06:18:30.361306+00:00"
+  },
+  {
+    "name": "ram-candidate-lint",
+    "command": [
+      "npm",
+      "run",
+      "lint"
+    ],
+    "source": "candidate",
+    "code": 0,
+    "seconds": 3.59,
+    "utc": "2026-10-25T06:18:33.960696+00:00"
+  },
+  {
+    "name": "ram-candidate-prettier",
+    "command": [
+      "npm",
+      "run",
+      "prettier:check"
+    ],
+    "source": "candidate",
+    "code": 0,
+    "seconds": 1.38,
+    "utc": "2026-10-25T06:18:48.397279+00:00"
+  },
+  {
+    "name": "ram-candidate-official-test",
+    "command": [
+      "npm",
+      "test"
+    ],
+    "source": "candidate",
+    "code": 0,
+    "seconds": 6.98,
+    "utc": "2026-10-25T06:18:55.391629+00:00"
+  },
+  {
+    "name": "ram-candidate-esm-support",
+    "command": [
+      "npm",
+      "run",
+      "test-esm-support"
+    ],
+    "source": "candidate",
+    "code": 0,
+    "seconds": 0.22,
+    "utc": "2026-10-25T06:18:55.619174+00:00"
+  },
+  {
+    "name": "ram-candidate-official-contract",
+    "command": [
+      "npm",
+      "run",
+      "test-contract"
+    ],
+    "source": "candidate",
+    "code": 0,
+    "seconds": 1.97,
+    "utc": "2026-10-25T06:18:57.604444+00:00"
+  },
+  {
+    "name": "ram-candidate-dependencies",
+    "command": [
+      "npm",
+      "run",
+      "check-dependencies"
+    ],
+    "source": "candidate",
+    "code": 0,
+    "seconds": 0.55,
+    "utc": "2026-10-25T06:18:58.174140+00:00"
+  },
+  {
+    "name": "ram-candidate-coverage",
+    "command": [
+      "npm",
+      "run",
+      "test-coverage",
+      "--",
+      "--chrome",
+      "/tmp/sinon-ram/chrome/chrome-headless-shell",
+      "--allow-chrome-as-root"
+    ],
+    "source": "candidate",
+    "code": 0,
+    "seconds": 5.95,
+    "utc": "2026-10-25T06:19:04.606137+00:00"
+  }
+]

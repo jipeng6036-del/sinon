@@ -1,0 +1,8 @@
+CWD /tmp/sinon-ram/candidate
+COMMAND ["npm", "run", "prettier:check"]
+
+> sinon@22.1.0 prettier:check
+> prettier --check '**/*.{js,css,md}'
+
+Checking formatting...
+All matched files use Prettier code style!

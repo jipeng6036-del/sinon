@@ -1,0 +1,7 @@
+PASS require-default
+PASS import-default
+PASS import-named
+PASS require-package-exports
+PASS require-fake-timers-sync
+PASS import-default-and-named
+PASS exact packed public API manifest

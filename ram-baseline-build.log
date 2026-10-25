@@ -1,0 +1,10 @@
+CWD /tmp/sinon-ram/baseline
+COMMAND ["npm", "run", "build-artifacts"]
+
+> sinon@22.1.0 build-artifacts
+> node ./build.cjs
+
+Generating lib/ from src/ using Rollup...
+[36m
+[1msrc/create-sinon-api.js, src/sinon/assert.js, src/sinon/behavior.js, src/sinon/collect-own-methods.js, src/sinon/colorizer.js, src/sinon/create-sandbox.js, src/sinon/create-stub-instance.js, src/sinon/default-behaviors.js, src/sinon/fake.js, src/sinon/mock-expectation.js, src/sinon/mock.js, src/sinon/promise.js, src/sinon/proxy-call-util.js, src/sinon/proxy-call.js, src/sinon/proxy-invoke.js, src/sinon/proxy.js, src/sinon/restore-object.js, src/sinon/sandbox.js, src/sinon/spy-formatters.js, src/sinon/spy.js, src/sinon/stub.js, src/sinon/throw-on-falsy-object.js, src/sinon/util/core/export-async-behaviors.js, src/sinon/util/core/extend.js, src/sinon/util/core/function-to-string.js, src/sinon/util/core/get-next-tick.js, src/sinon/util/core/get-property-descriptor.js, src/sinon/util/core/is-es-module.js, src/sinon/util/core/is-non-existent-property.js, src/sinon/util/core/is-property-configurable.js, src/sinon/util/core/is-restorable.js, src/sinon/util/core/next-tick.js, src/sinon/util/core/sinon-type.js, src/sinon/util/core/times-in-words.js, src/sinon/util/core/walk-object.js, src/sinon/util/core/walk.js, src/sinon/util/core/wrap-method.js, src/sinon/util/fake-timers.js, src/sinon-esm.js, src/sinon.js[22m → [1mlib[22m...[39m
+[32mcreated [1mlib[22m in [1m233ms[22m[39m

@@ -1,0 +1,29 @@
+
+> sinon@22.1.0 test-esm-support
+> mocha test/es2015/module-support-assessment-test.mjs
+
+
+
+  sinon.stub()
+    Modules with objects as their default export
+      √ should NOT result in error
+      √ should NOT result in error with a custom toStringTag
+      √ should spy/stub an exported function
+    Modules without default export
+      √ should give a proper error message
+    Modules that exports a function as their default export
+      √ should not be possible to spy/stub the default export using a wrapper for the exports
+
+  sinon.spy()
+    Modules with objects as their default export
+      √ should NOT result in error
+      √ should NOT result in error with a custom toStringTag
+      √ should spy/stub an exported function
+    Modules without default export
+      √ should give a proper error message
+    Modules that exports a function as their default export
+      √ should not be possible to spy/stub the default export using a wrapper for the exports
+
+
+  10 passing (7ms)
+

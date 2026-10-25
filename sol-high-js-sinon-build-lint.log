@@ -1,0 +1,12 @@
+
+> sinon@22.1.0 lint
+> eslint --max-warnings 0 '**/*.{js,cjs,mjs}'
+
+
+Oops! Something went wrong! :(
+
+ESLint: 10.3.0
+
+No files matching the pattern "'**/*.{js,cjs,mjs}'" were found.
+Please check for typing mistakes in the pattern.
+

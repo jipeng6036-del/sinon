@@ -1,0 +1,46 @@
+CWD /tmp/sinon-ram/candidate
+COMMAND ["npm", "run", "test-contract"]
+
+> sinon@22.1.0 pretest-contract
+> run-s build-artifacts
+
+
+> sinon@22.1.0 build-artifacts
+> node ./build.cjs
+
+Generating lib/ from src/ using Rollup...
+[36m
+[1m/tmp/sinon-ram/candidate/src/create-sinon-api.js, /tmp/sinon-ram/candidate/src/sinon/assert.js, /tmp/sinon-ram/candidate/src/sinon/behavior.js, /tmp/sinon-ram/candidate/src/sinon/collect-own-methods.js, /tmp/sinon-ram/candidate/src/sinon/colorizer.js, /tmp/sinon-ram/candidate/src/sinon/create-sandbox.js, /tmp/sinon-ram/candidate/src/sinon/create-stub-instance.js, /tmp/sinon-ram/candidate/src/sinon/default-behaviors.js, /tmp/sinon-ram/candidate/src/sinon/fake.js, /tmp/sinon-ram/candidate/src/sinon/mock-expectation.js, /tmp/sinon-ram/candidate/src/sinon/mock.js, /tmp/sinon-ram/candidate/src/sinon/promise.js, /tmp/sinon-ram/candidate/src/sinon/proxy-call-util.js, /tmp/sinon-ram/candidate/src/sinon/proxy-call.js, /tmp/sinon-ram/candidate/src/sinon/proxy-invoke.js, /tmp/sinon-ram/candidate/src/sinon/proxy.js, /tmp/sinon-ram/candidate/src/sinon/restore-object.js, /tmp/sinon-ram/candidate/src/sinon/sandbox.js, /tmp/sinon-ram/candidate/src/sinon/spy-formatters.js, /tmp/sinon-ram/candidate/src/sinon/spy.js, /tmp/sinon-ram/candidate/src/sinon/stub.js, /tmp/sinon-ram/candidate/src/sinon/throw-on-falsy-object.js, /tmp/sinon-ram/candidate/src/sinon/util/core/export-async-behaviors.js, /tmp/sinon-ram/candidate/src/sinon/util/core/extend.js, /tmp/sinon-ram/candidate/src/sinon/util/core/function-to-string.js, /tmp/sinon-ram/candidate/src/sinon/util/core/get-next-tick.js, /tmp/sinon-ram/candidate/src/sinon/util/core/get-property-descriptor.js, /tmp/sinon-ram/candidate/src/sinon/util/core/is-es-module.js, /tmp/sinon-ram/candidate/src/sinon/util/core/is-non-existent-property.js, /tmp/sinon-ram/candidate/src/sinon/util/core/is-property-configurable.js, /tmp/sinon-ram/candidate/src/sinon/util/core/is-restorable.js, /tmp/sinon-ram/candidate/src/sinon/util/core/next-tick.js, /tmp/sinon-ram/candidate/src/sinon/util/core/sinon-type.js, /tmp/sinon-ram/candidate/src/sinon/util/core/times-in-words.js, /tmp/sinon-ram/candidate/src/sinon/util/core/walk-object.js, /tmp/sinon-ram/candidate/src/sinon/util/core/walk.js, /tmp/sinon-ram/candidate/src/sinon/util/core/wrap-method.js, /tmp/sinon-ram/candidate/src/sinon/util/fake-timers.js, /tmp/sinon-ram/candidate/src/sinon-esm.js, /tmp/sinon-ram/candidate/src/sinon.js[22m → [1mlib[22m...[39m
+[32mcreated [1mlib[22m in [1m225ms[22m[39m
+
+> sinon@22.1.0 test-contract
+> run-s test-distribution test-pkg-browser-esm test-pkg-browser-global
+
+
+> sinon@22.1.0 test-distribution
+> node ./scripts/test-distribution.mjs
+
+Packing Sinon...
+Packed tarball: /tmp/sinon-ram/candidate/sinon-22.1.0.tgz
+Verifying public API manifest...
+PASS public API manifest
+RUNNING fixture: require-default
+PASS require-default
+RUNNING fixture: import-default
+PASS import-default
+RUNNING fixture: import-named
+PASS import-named
+RUNNING fixture: require-package-exports
+PASS require-package-exports
+RUNNING fixture: require-fake-timers-sync
+PASS require-fake-timers-sync
+RUNNING fixture: import-default-and-named
+PASS import-default-and-named
+
+> sinon@22.1.0 test-pkg-browser-esm
+> node test/es2015/check-esm-bundle-is-runnable.mjs
+
+
+> sinon@22.1.0 test-pkg-browser-global
+> node test/distribution/browser-global-smoke.mjs
+

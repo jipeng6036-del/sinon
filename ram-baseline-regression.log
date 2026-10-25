@@ -1,0 +1,10 @@
+CWD /tmp/sinon-ram/baseline
+COMMAND ["node", "node_modules/mocha/bin/mocha.js", "test/scripts/rollup-config-test.js"]
+
+
+  Rollup source entries
+    ✔ builds every source entry into the matching CommonJS module (234ms)
+
+
+  1 passing (237ms)
+

@@ -1,0 +1,10 @@
+{
+  "repository": "F:\\Github-PR\\inspection\\sol-high-sinon-2384",
+  "baseline": "84e91a491b5d88b81e6a80e5dd3f77520577f9e8",
+  "files": {
+    "rollup.config.mjs": "df12ec5aa7080aca5d1a40012116f005c642ea4b8fed538e3572a0de0d0386a4",
+    "test/scripts/rollup-config-test.js": "45a52bdc1d87c8ff01b5fec0a6f4684e0423ecf3e14edd8fbea2c1c2bb6f9252"
+  },
+  "tracked_diff": " rollup.config.mjs | 2 +-\n 1 file changed, 1 insertion(+), 1 deletion(-)\n",
+  "status": "M  rollup.config.mjs\n?? test/scripts/rollup-config-test.js\n"
+}

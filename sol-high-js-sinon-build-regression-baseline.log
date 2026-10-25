@@ -1,0 +1,19 @@
+
+
+  Rollup source entries
+    1) builds every source entry into the matching CommonJS module
+
+
+  0 passing (54ms)
+  1 failing
+
+  1) Rollup source entries
+       builds every source entry into the matching CommonJS module:
+     RollupError: Entry module "src\create-sinon-api.js" cannot be external.
+      at getRollupError (node_modules\rollup\dist\shared\parseAst.js:289:41)
+      at Object.error (node_modules\rollup\dist\shared\parseAst.js:285:42)
+      at ModuleLoader.loadEntryModule (node_modules\rollup\dist\shared\rollup.js:23382:32)
+      at async Promise.all (index 0)
+
+
+

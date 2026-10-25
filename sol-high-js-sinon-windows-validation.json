@@ -1,0 +1,43 @@
+{
+  "repo": "sinonjs/sinon",
+  "base": "84e91a491b5d88b81e6a80e5dd3f77520577f9e8",
+  "branch": "fix/windows-rollup-entry-paths",
+  "node": "24.14.0",
+  "npm": "11.16.0",
+  "chromium": "156.0.8078.4",
+  "sources": {
+    "test/scripts/rollup-config-test.js": "45A52BDC1D87C8FF01B5FEC0A6F4684E0423ECF3E14EDD8FBEA2C1C2BB6F9252",
+    "rollup.config.mjs": "DF12EC5AA7080ACA5D1A40012116F005C642EA4B8FED538E3572A0DE0D0386A4"
+  },
+  "windows": {
+    "baselineRollup": "0 passed / 1 failed: Entry module src\\create-sinon-api.js cannot be external",
+    "candidateRollup": "1 passed",
+    "officialArtifactBuild": "PASS",
+    "officialNodeSuite": "1561 passed / 12 pending",
+    "fullESLintDirect": "PASS",
+    "fullPrettierLF": "PASS",
+    "realChromium": "1553 passed / 13 pending; all 32 original test files",
+    "realWebWorker": "1 passed",
+    "officialESMSupport": "10 passed",
+    "packedOriginalFixtures": "6 passed",
+    "packedPublicAPIManifest": "PASS exact",
+    "esmAndGlobalBundleSmoke": "PASS",
+    "realChromeOriginalCoverage": "1553 passed / 13 pending; thresholds passed",
+    "coveragePercent": {
+      "lines": 97.46,
+      "branches": 92.42,
+      "functions": 98.16,
+      "statements": 97.48
+    },
+    "dependencyGate": "PASS with existing configuration hints",
+    "baselineNpmLint": "Exit 2, original literal single-quoted glob; same as candidate"
+  },
+  "limits": [
+    "Original Windows npm lint/browser/contract scripts retain their pre-existing quote or npm/npx spawn failures.",
+    "External browser harness uses unchanged esbuild/Mochify and original test-file list, encoding generated require paths and passing a built bundle.",
+    "Original coverage.cjs and nested nyc thresholds were used in real Chrome.",
+    "Original packed consumer fixtures/helper and manifest ran unchanged; only npm pack invocation was adapted.",
+    "Independent Linux controls are owned by root and not incorporated here yet."
+  ],
+  "scope": "Two frozen staged files; no commit/push/PR. No new issue and do not close #2384, which already passes current source."
+}

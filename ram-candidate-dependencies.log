@@ -1,0 +1,12 @@
+CWD /tmp/sinon-ram/candidate
+COMMAND ["npm", "run", "check-dependencies"]
+
+> sinon@22.1.0 check-dependencies
+> knip --dependencies
+
+Configuration hints (5)
+@sinonjs/eslint-config                              package.json  Remove from ignoreDependencies
+@sinonjs/eslint-plugin-no-prototype-methods         package.json  Remove from ignoreDependencies
+eslint                                              package.json  Remove from ignoreBinaries    
+make                                                package.json  Remove from ignoreBinaries    
+docs/release-source/release/examples/run-test.sh    package.json  Remove from ignoreBinaries    
